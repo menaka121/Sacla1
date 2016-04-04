@@ -21,11 +21,10 @@ object hello {
   def fibb(n: Int): BigInt = {
     def go(x:Int, y: BigInt, acc: BigInt): BigInt = {
       if(x == n) {
-//        print(acc)
         acc
       }
       else{
-        print(acc + " ")
+        println(acc)
         go(x+1, acc, acc + y)
       }
     }
@@ -36,6 +35,6 @@ object hello {
     val s = new ClassTestOne("Menaka")
     println(s.greet)
 
-    println(fibb(2000))
+    println(fibb(45))
   }
 }
